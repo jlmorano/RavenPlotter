@@ -1,22 +1,22 @@
+# Purpose: Birds-of-paradise sound analysis project-- 
+#       1. Data-check Raven selection tables
+#       2. PCA cluster analysis of continuous sound measurements to determine call types 
+#       3. Clustering based on categorical signal descriptions
 
 
+#Run on Janelle's laptop
+setwd(dir<-"/Users/jlm394/Desktop/R_working/BoP")
+
+directories<-list.dirs("/Users/jlm394/Desktop/R_working/BoP/Completed")[-1] #Gets directories (not parent directory)
+species.names<-list.dirs("/Users/jlm394/Desktop/R_working/BoP/Completed",full.names=FALSE)[-1]
 
 
+#Run on Rusty's
+#setwd(dir<-"C:/Users/Rusty/Amazon Drive/BOP/SOUND")
 
 
-
-
-
-
-
-
-
-
-setwd(dir<-"C:/Users/Rusty/Amazon Drive/BOP/SOUND")
-
-
-directories<-list.dirs("C:/Users/Rusty/Amazon Drive/BOP/Sound/Completed")[-1] #Gets directories (not parent directory)
-species.names<-list.dirs("C:/Users/Rusty/Amazon Drive/BOP/Sound/Completed",full.names=FALSE)[-1]
+#directories<-list.dirs("C:/Users/Rusty/Amazon Drive/BOP/Sound/Completed")[-1] #Gets directories (not parent directory)
+#species.names<-list.dirs("C:/Users/Rusty/Amazon Drive/BOP/Sound/Completed",full.names=FALSE)[-1]
 
 
 mega<-c()
